@@ -1,0 +1,293 @@
+body{ /* Website background stuff*/
+    background-color: black;
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* background-position: center; */
+    /* background-size: cover; */
+}
+h1{
+    font-family: "ui-monospace", "consolas", sans-serif;
+    /* background: linear-gradient(black, #3c3c3c); */
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 99 !important;
+    position: sticky;
+    top: 0px;
+    height: 150px;
+}
+p{
+    font-family: "consolas", sans-serif;
+    /* border-style: outset; */
+    border-width: 5px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right:auto;
+    margin-left: auto;
+}
+#box1{
+    border: 5px solid;
+    width: 500px;
+    height: 30px;
+    font-size: 22px;
+    background: gray;
+
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+}
+#box2{
+    border: 5px solid;
+    width: 500px;
+    height: 30px;
+    font-size: 22px;
+    background: green;
+
+    margin-right:auto;
+    margin-left: auto;
+}
+span.mainLogo{
+    /* display: inline-block; */
+    width: 100px;
+    float: left;
+}
+span.links{
+    /* display: inline-block; */
+    width: 200px;
+    margin-top: 5px;
+    float: right;
+}
+.twitterIcon{
+    filter: invert(57%) sepia(23%) saturate(7415%) hue-rotate(176deg) brightness(101%) contrast(90%);
+}
+.linkedInIcon{
+    filter: invert(32%) sepia(36%) saturate(2732%) hue-rotate(189deg) brightness(92%) contrast(104%);
+}
+.emailIcon{
+    filter: invert(54%) sepia(89%) saturate(1581%) hue-rotate(171deg) brightness(96%) contrast(90%);
+}
+
+/* Start Nav Section */
+nav {
+    float: left;
+    width : auto; 
+    background: #161616;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: sticky;
+    top: 200px;
+}
+a {
+    text-decoration: none;
+    text-decoration-color: white;
+    color: white;
+}
+span.dropDown{
+    padding : 10px;
+    background : #161616; 
+    color : white;
+    font-size : 1.2em;
+    font-variant : small-caps;
+    cursor : pointer;
+    display: block;
+}
+
+span::after {
+float: right;
+right: 20%;
+}
+
+.slide {
+clear:both;
+width:80%;
+height:0px;
+overflow: hidden;
+text-align: left;
+transition: height .4s ease;
+list-style: none;
+}
+  
+.slide li {padding : 10px;}
+
+#touch {position: absolute; opacity: 0; height: 0px;}    
+
+#touch:checked + .slide {height: 200px;} 
+/* End Nav Section */
+#summaryHeader{
+    color:white;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+#section1{
+    /* display: inline-block; */
+    color:white;
+    margin-left: 300px;
+    margin-right: auto;
+    width: auto;
+    /* display: grid;
+    grid-template-areas:
+    'summary summary'
+    'section1p1 section1p2'
+    'section1p1 section1p3';
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    padding:10px;
+    gap: 10px; */
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides, .myslides2 {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container, .slideshow-container2 {
+  width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.slideText {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 40px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 35px;
+}
+
+/* The dots/bullets/indicators */
+.dot, .dot2 {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .slideText {font-size: 11px}
+}
+#section1p1{
+    /* grid-area: section1p1; */
+    width: 800px;
+    margin-right: auto;
+}
+#section1p1 img{
+    width:800px;
+}
+#section1p2 img{
+    float: left;
+    margin-right: 20px;
+    width: 550px;
+}
+#section1p2{
+    display: inline-block;
+    /* grid-area: section1p2; */
+    width: 850px;
+}
+#section1p3{
+    display: inline-block;
+}
+#section1p3 p{
+    display: inline-block;
+    /* grid-area: section1p3; */
+    width: 280px;
+}
+#section1p3 img{
+    float: right;
+    width: 500px;
+    margin-left: 20px;
+}
+#section2{
+    /* display: inline-block; */
+    color:white;
+    margin-left: 300px;
+    width: 800px;
+    margin-right: auto;
+    /* display: grid;
+    grid-template-areas:
+    'summary summary'
+    'section1p1 section1p2'
+    'section1p1 section1p3';
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    padding:10px;
+    gap: 10px; */
+}
+#section3, #section4{
+    color:white;
+    margin-left: 300px;
+    width: 800px;
+    margin-right: auto;
+}
+h2{
+    /* grid-area: summary; */
+    font-family: "ui-monospace", "consolas", sans-serif;
+    /* background: linear-gradient(black, #3c3c3c); */
+    color:white;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    top: 0px;
+    text-align: center;
+    font-size:2.8em;
+}
+h3{
+    font-family: "ui-monospace", "consolas", sans-serif;
+    /* background: linear-gradient(black, #3c3c3c); */
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    top: 0px;
+    height: auto;
+    font-size:2em;
+}
